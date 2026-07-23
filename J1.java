@@ -13,5 +13,6 @@ public class J1 {
        String str = "a b c";
        String[] s = str.split(" ");
        System.out.println(Arrays.toString(s));
+       System.out.println("prakash");
    }
 }
