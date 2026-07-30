@@ -3,45 +3,45 @@ import java.util.Arrays;
 public class PracticeProblems {
 
     public static void main(String[] args) {
-    /* 1).
-       System.out.print("Fibonacci sequence with recursion: ");
-       fibrecur(8);
-       System.out.println();
-       System.out.print("Fibonacci sequence without recursion: ");
-       fibnonrecur(8);
-    */
+        /* 1).
+        System.out.print("Fibonacci sequence with recursion: ");
+        fibrecur(8);
+        System.out.println();
+        System.out.print("Fibonacci sequence without recursion: ");
+        fibnonrecur(8);
+        */
 
-    /* 2).
-       System.out.print("prime numbers :");
-       prime(100);
-    */
+        /* 2).
+        System.out.print("prime numbers :");
+        prime(100);
+        */
+        
+        /* 3).
+        System.out.println("Swapping two variables without using temp variable :");
+        swap(10,20);
+        */
+
+        /* 4).
+        Scanner sc = new Scanner(System.in);
+        int fin = sc.nextInt();
+        System.out.println("factorial of "+fin+" with recursion: "+factrecur(fin));
+        System.out.println("factorial of "+fin+" without recursion: "+factnonrecur(fin));
+        sc.close(); 
+        */
+
+        /* 5).
+        Scanner sc = new Scanner(System.in);
+        String in = sc.nextLine();
+        System.out.println("reverse of "+in+": "+strrev(in));
+        sc.close(); 
+        */
     
-    /* 3).
-       System.out.println("Swapping two variables without using temp variable :");
-       swap(10,20);
-    */
-
-    /* 4).
-       Scanner sc = new Scanner(System.in);
-       int fin = sc.nextInt();
-       System.out.println("factorial of "+fin+" with recursion: "+factrecur(fin));
-       System.out.println("factorial of "+fin+" without recursion: "+factnonrecur(fin));
-       sc.close(); 
-    */
-
-    /* 5).
-      Scanner sc = new Scanner(System.in);
-      String in = sc.nextLine();
-      System.out.println("reverse of "+in+": "+strrev(in));
-      sc.close(); 
-    */
-   
-    /* 6).
-       Scanner sc = new Scanner(System.in);
-       String in = sc.nextLine();
-       VowelsAndConsonents(in);
-       sc.close(); 
-    */
+        /* 6).
+        Scanner sc = new Scanner(System.in);
+        String in = sc.nextLine();
+        VowelsAndConsonents(in);
+        sc.close(); 
+        */
 
    }
     /* 1. Write a program to print fibonacci sequence upto n'th term.
