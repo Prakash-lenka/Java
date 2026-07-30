@@ -6,6 +6,27 @@
     "configurations": [
         {
             "type": "java",
+            "name": "PracticeProblems",
+            "request": "launch",
+            "mainClass": "PracticeProblems",
+            "projectName": "JAVA practice_e7a616ae"
+        },
+        {
+            "type": "java",
+            "name": "Exec",
+            "request": "launch",
+            "mainClass": "OOP.Exec",
+            "projectName": "JAVA practice_e7a616ae"
+        },
+        {
+            "type": "java",
+            "name": "OOP",
+            "request": "launch",
+            "mainClass": "OOP",
+            "projectName": "JAVA practice_e7a616ae"
+        },
+        {
+            "type": "java",
             "name": "J1",
             "request": "launch",
             "mainClass": "J1",
