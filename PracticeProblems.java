@@ -63,6 +63,41 @@ public class PracticeProblems {
         System.out.println("The sum of Digits of the number "+num+" is "+sumOfDigits(num));
         sc.close(); 
         */
+
+        /* 10).
+        Scanner sc = new Scanner(System.in);
+        int[] nums = new int[3];
+        for(int i = 0;i<3;i++){
+            nums[i] = sc.nextInt();
+        }
+        System.out.println("The maximum number is: "+maxNumber(nums));
+        sc.close(); 
+        */
+
+        /* 11).
+        Scanner sc = new Scanner(System.in);
+        int num = sc.nextInt();
+        evenOrOdd(num);
+        sc.close(); 
+        */
+
+        /* 12).
+        Scanner sc = new Scanner(System.in);
+        System.out.print("how many numbers you want to sort? : ");
+        int totalnums = sc.nextInt();
+        int nums[] = new int[totalnums];
+        for(int i = 0;i<totalnums;i++){
+            System.out.print("num"+1+" : ");
+            nums[i] = sc.nextInt();
+        }
+        bubbleSort(nums);
+        sc.close(); 
+        */
+
+        /* 13).
+        int[] nums = {1,2,4,5,6,8,9};
+        linearSearch(nums, 4); 
+        */
    }
     /* 1. Write a program to print fibonacci sequence upto n'th term.
             a) with recursion
@@ -214,4 +249,62 @@ public class PracticeProblems {
         return sum;
     }
 
+    // 10.	Write a program to find the largest of three numbers.
+    static int maxNumber(int[] nums){
+        int max = nums[0];
+        for(int i = 1;i<nums.length;i++){
+            if(max<nums[i]){
+                max = nums[i];
+            }
+        }
+        return max;
+    }
+
+    // 11.	Write a program to check if a given number is odd or even.
+    static void evenOrOdd(int n){
+        if(n%2==0){
+            System.out.println(n+" is an even number.");
+        }
+        else{
+            System.out.println(n+" is an odd number.");
+        }
+    }
+
+    // 12.	Write a program to implement the bubble sort algorithm.
+    static void bubbleSort(int[] nums){
+        for(int i=0;i<nums.length;i++){
+            for(int j=i;j<nums.length;j++){
+                if(nums[i]>nums[j]){
+                    // nums[i]+=nums[j];
+                    // nums[j] = nums[i]-nums[j];
+                    // nums[i]-=nums[j];
+                    bswap(nums,i,j);
+                }
+            }
+        }
+        for (int i:nums) {
+            System.out.print(i+" ");
+        }
+    }
+    static void bswap(int[] nums, int i, int j){
+        int temp = nums[i];
+        nums[i] = nums[j];
+        nums[j] = temp;
+    }
+
+    // 13.	Write a program to implement the linear search algorithm.
+    static void linearSearch(int[] nums, int n){
+        int k = 0;
+        for(int i=0;i<nums.length;i++){
+            if(nums[i] == n){
+                System.out.println(n+" found at "+i);
+                k = 1;
+                break;
+            }
+        }
+        if(k==0){
+            System.out.println("Sorry! "+n+" not in the list.");
+        }
+    }
+    
 }
