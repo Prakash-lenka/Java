@@ -43,6 +43,26 @@ public class PracticeProblems {
         sc.close(); 
         */
 
+        /* 7).
+        Scanner sc = new Scanner(System.in);
+        int num = sc.nextInt();
+        System.out.println("is "+num+" prime? : "+isPrime(num));
+        sc.close(); 
+        */
+       
+        /* 8).
+        Scanner sc = new Scanner(System.in);
+        int num = sc.nextInt();
+        System.out.println(isArmstrongNum(num));
+        sc.close();
+        */
+
+        /* 9).
+        Scanner sc = new Scanner(System.in);
+        int num = sc.nextInt();
+        System.out.println("The sum of Digits of the number "+num+" is "+sumOfDigits(num));
+        sc.close(); 
+        */
    }
     /* 1. Write a program to print fibonacci sequence upto n'th term.
             a) with recursion
@@ -157,6 +177,41 @@ public class PracticeProblems {
         System.out.println("Number of vowels: " + vcount);
         System.out.println("Number of consonants: " + (str.length() - vcount));
 
+    }
+
+    // 7. Write a program to check if a given number is a prime number.
+    static boolean isPrime(int n){
+        for(int i = 2;i<=Math.sqrt(n);i++){
+            if(n%i == 0){
+                return false;
+            }
+        }
+        return true;
+    }
+
+    // 8.	Write a program to check if a given number is an Armstrong number. 
+    static boolean isArmstrongNum(int n){
+        int numdigits = String.valueOf(n).length();
+        int sum = 0;
+        int temp = n;
+        for(int i = 0; i<numdigits;i++){
+            sum+=Math.pow(temp%10, numdigits);
+            temp/=10;
+        }
+        if(sum == n){
+            return true;
+        }
+        return false;
+    }
+
+    // 9.	Write a program to find the sum of digits of a given number.
+    static int sumOfDigits(int n){
+        int sum = 0;
+        while(n!=0){
+            sum+=n%10;
+            n/=10;
+        }
+        return sum;
     }
 
 }

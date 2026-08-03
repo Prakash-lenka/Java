@@ -119,7 +119,10 @@ public class J1 {
       // }
 
 
-      show();
+      int n = 10;
+      int k = n;
+      n-=1;
+      System.out.print(n+" "+k);
 
 
       
