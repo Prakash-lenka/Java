@@ -9,6 +9,9 @@ import PracticeProblems.OOPsPrograms.Rectangle;
 public class Main {
 
     public static void main(String[] args) {
+
+        // ***** FOR QUESTIONS(1-13) METHODS WHICH ARE CALLING HERE ARE DECLARED BELOW(OUTSIDE MAIN METHOD).*****
+
         /* 1).
         System.out.print("Fibonacci sequence with recursion: ");
         fibrecur(8);
@@ -132,6 +135,7 @@ public class Main {
         sc.close(); 
         */
    }
+
     /* 1. Write a program to print fibonacci sequence upto n'th term.
             a) with recursion
             b) without recursion
