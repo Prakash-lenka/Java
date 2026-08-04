@@ -1,6 +1,12 @@
+package PracticeProblems;
 import java.util.Scanner;
 import java.util.Arrays;
-public class PracticeProblems {
+import PracticeProblems.OOPsPrograms.Shape;
+import PracticeProblems.OOPsPrograms.Triangle;
+import PracticeProblems.OOPsPrograms.Circle;
+import PracticeProblems.OOPsPrograms.Rectangle;
+
+public class Main {
 
     public static void main(String[] args) {
         /* 1).
@@ -97,6 +103,33 @@ public class PracticeProblems {
         /* 13).
         int[] nums = {1,2,4,5,6,8,9};
         linearSearch(nums, 4); 
+        */
+        
+        /* 14).
+        Scanner sc = new Scanner(System.in);
+        // Area of a Circle
+        // System.out.print("raidus: ")
+        // double radius = sc.nextDouble();
+        // Shape circle = new Circle(radius);
+        // System.out.println("Area of a Circle of 'radius' "+radius+" is "+circle.calculateArea());
+        
+        // Area of a Rectangle
+        // System.out.print("length: ");
+        // double length = sc.nextDouble();
+        // System.out.print("width: ");
+        // double width = sc.nextDouble();
+        // Shape rectangle = new Rectangle(length, width);
+        // System.out.println("Area of a rectangle of 'length' "+length+" and 'width' "+width+" is "+rectangle.calculateArea());
+        
+        // Area of a Triangle
+        // System.out.print("Base: ");
+        // double base = sc.nextDouble();
+        // System.out.print("Height: ");
+        // double height = sc.nextDouble();
+        // Shape triangle = new Triangle(height, base);
+        // System.out.println("Area of a rectangle of 'height' "+height+" and 'base' "+base+" is "+triangle.calculateArea());
+        
+        sc.close(); 
         */
    }
     /* 1. Write a program to print fibonacci sequence upto n'th term.

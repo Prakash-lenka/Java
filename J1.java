@@ -119,10 +119,13 @@ public class J1 {
       // }
 
 
-      int n = 10;
-      int k = n;
-      n-=1;
-      System.out.print(n+" "+k);
+      // int n = 10;
+      // int k = n;
+      // n-=1;
+      // System.out.print(n+" "+k);
+
+      System.out.println(String.valueOf(123).length());
+      System.out.println(Math.pow(10,3));
 
 
       
