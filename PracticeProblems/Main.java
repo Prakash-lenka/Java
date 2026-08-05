@@ -1,10 +1,18 @@
 package PracticeProblems;
 import java.util.Scanner;
 import java.util.Arrays;
-import PracticeProblems.OOPsPrograms.Shape;
-import PracticeProblems.OOPsPrograms.Triangle;
-import PracticeProblems.OOPsPrograms.Circle;
-import PracticeProblems.OOPsPrograms.Rectangle;
+// import PracticeProblems.OOPsPrograms.Shape;
+// import PracticeProblems.OOPsPrograms.Triangle;
+// import PracticeProblems.OOPsPrograms.Circle;
+// import PracticeProblems.OOPsPrograms.Rectangle;
+// import PracticeProblems.OOPsPrograms.Animal;
+// import PracticeProblems.OOPsPrograms.Basketball;
+// import PracticeProblems.OOPsPrograms.Dog;
+// import PracticeProblems.OOPsPrograms.Football;
+// import PracticeProblems.OOPsPrograms.Cat;
+// import PracticeProblems.OOPsPrograms.Sport;
+// import PracticeProblems.OOPsPrograms.Tennis;
+import PracticeProblems.OOPsPrograms.*;
 
 public class Main {
 
@@ -12,7 +20,7 @@ public class Main {
 
         // ***** FOR QUESTIONS(1-13) METHODS WHICH ARE CALLING HERE ARE DECLARED BELOW(OUTSIDE MAIN METHOD).*****
 
-        /* 1).
+        /* //1).
         System.out.print("Fibonacci sequence with recursion: ");
         fibrecur(8);
         System.out.println();
@@ -20,17 +28,17 @@ public class Main {
         fibnonrecur(8);
         */
 
-        /* 2).
+        /* //2).
         System.out.print("prime numbers :");
         prime(100);
         */
         
-        /* 3).
+        /* //3).
         System.out.println("Swapping two variables without using temp variable :");
         swap(10,20);
         */
 
-        /* 4).
+        /* //4).
         Scanner sc = new Scanner(System.in);
         int fin = sc.nextInt();
         System.out.println("factorial of "+fin+" with recursion: "+factrecur(fin));
@@ -38,42 +46,42 @@ public class Main {
         sc.close(); 
         */
 
-        /* 5).
+        /* //5).
         Scanner sc = new Scanner(System.in);
         String in = sc.nextLine();
         System.out.println("reverse of "+in+": "+strrev(in));
         sc.close(); 
         */
     
-        /* 6).
+        /* //6).
         Scanner sc = new Scanner(System.in);
         String in = sc.nextLine();
         VowelsAndConsonents(in);
         sc.close(); 
         */
 
-        /* 7).
+        /* //7).
         Scanner sc = new Scanner(System.in);
         int num = sc.nextInt();
         System.out.println("is "+num+" prime? : "+isPrime(num));
         sc.close(); 
         */
        
-        /* 8).
+        /* //8).
         Scanner sc = new Scanner(System.in);
         int num = sc.nextInt();
         System.out.println(isArmstrongNum(num));
         sc.close();
         */
 
-        /* 9).
+        /* //9).
         Scanner sc = new Scanner(System.in);
         int num = sc.nextInt();
         System.out.println("The sum of Digits of the number "+num+" is "+sumOfDigits(num));
         sc.close(); 
         */
 
-        /* 10).
+        /* //10).
         Scanner sc = new Scanner(System.in);
         int[] nums = new int[3];
         for(int i = 0;i<3;i++){
@@ -83,14 +91,14 @@ public class Main {
         sc.close(); 
         */
 
-        /* 11).
+        /* //11).
         Scanner sc = new Scanner(System.in);
         int num = sc.nextInt();
         evenOrOdd(num);
         sc.close(); 
         */
 
-        /* 12).
+        /* //12).
         Scanner sc = new Scanner(System.in);
         System.out.print("how many numbers you want to sort? : ");
         int totalnums = sc.nextInt();
@@ -103,12 +111,12 @@ public class Main {
         sc.close(); 
         */
 
-        /* 13).
+        /* //13).
         int[] nums = {1,2,4,5,6,8,9};
         linearSearch(nums, 4); 
         */
         
-        /* 14).
+        /* //14).
         Scanner sc = new Scanner(System.in);
         // Area of a Circle
         // System.out.print("raidus: ")
@@ -133,6 +141,34 @@ public class Main {
         // System.out.println("Area of a rectangle of 'height' "+height+" and 'base' "+base+" is "+triangle.calculateArea());
         
         sc.close(); 
+        */
+
+        /* //15).
+        Animal dog = new Dog();
+        System.out.println("How a dog sounds? : "+ dog.makeSound());
+        Animal cat = new Cat();
+        System.out.println("How a cat sounds? : "+cat.makeSound());
+        */
+
+        /* //16).
+        Sport football = new Football();
+        System.out.println("What are you doing? : "+football.play());
+
+        Sport basketball = new Basketball();
+        System.out.println("What are you doing? : "+basketball.play());
+
+        Sport tennis = new Tennis();
+        System.out.println("What are you doing? : "+tennis.play()); 
+        */
+
+        /* //17).
+        Vehicle car = new Car();
+        car.startEngine();
+        car.stopEngine();
+
+        Vehicle motorcycle = new MotorCycle();
+        motorcycle.startEngine();
+        motorcycle.stopEngine(); 
         */
    }
 
