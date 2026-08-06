@@ -1,5 +1,8 @@
 package PracticeProblems;
 import java.util.Scanner;
+
+import javax.naming.InsufficientResourcesException;
+
 import java.util.Arrays;
 // import PracticeProblems.OOPsPrograms.Shape;
 // import PracticeProblems.OOPsPrograms.Triangle;
@@ -161,7 +164,7 @@ public class Main {
         System.out.println("What are you doing? : "+tennis.play()); 
         */
 
-        //17).
+        /* //17).
         Vehicle car = new Car();
         car.startEngine();
         car.stopEngine();
@@ -169,6 +172,63 @@ public class Main {
         Vehicle motorcycle = new MotorCycle();
         motorcycle.startEngine();
         motorcycle.stopEngine(); 
+        */
+
+        /* //18).
+        Scanner sc = new Scanner(System.in);
+        int age = sc.nextInt();
+
+        try{
+            ageBasedRegistration(age);
+        }
+        catch(Exception e){
+            System.out.println("Registration failed: "+ e.getMessage());
+        }
+        sc.close(); 
+        */
+
+        /* //19).
+        Scanner sc = new Scanner(System.in);
+        int amount = sc.nextInt();
+
+        try{
+            balance(amount);
+        }
+        catch(Exception e){
+            System.out.println("Transaction failed: "+ e.getMessage());
+        }
+        sc.close();  
+        */
+        
+        /* //20).
+        Scanner sc = new Scanner(System.in);
+        String email = sc.next();
+        try{
+            emailVerifiaction(email);
+        }
+        catch(Exception e){
+            System.out.println("Invalid Email: "+ e.getMessage());
+        }
+        sc.close(); 
+        */
+
+        //21).
+        Scanner sc = new Scanner(System.in);
+        int num;
+        int sum = 0;
+        for(int i = 0;i<5;i++){
+            num = sc.nextInt();
+            try{
+                handleNumber(num);
+            }
+            catch(Exception e){
+                num = -num;
+                System.out.println(e.getMessage()+" Corrected to "+num);
+            }
+            sum+=num;
+        }
+        System.out.println("Sum of the numbers you entered: "+sum);
+        sc.close();
         
        
    }// ***main method ends.***
@@ -380,5 +440,76 @@ public class Main {
             System.out.println("Sorry! "+n+" not in the list.");
         }
     }
+
+    // 18.	Create a custom exception to handle invalid ages for a registration system.
+
+    static class InvalidAgeException extends Exception{
+        InvalidAgeException(String msg){
+            super(msg);
+        }
+    }
+    static void ageBasedRegistration(int age) throws Exception{
+        if (age<18){
+            throw new InvalidAgeException("You're "+(18-age)+" Years short for valid age(18).");
+        }
+        else if(age>130){
+            throw new InvalidAgeException("You can't be that much old. Sorry wrong age.");
+        }
+        else{
+            System.out.println("Registration successful. Thank you.");
+        }
+    }
+
+    // 19.	Create a custom exception to handle insufficient funds in a bank account.
+    static class InsufficientFundsException extends Exception{
+        InsufficientFundsException(String msg){
+            super(msg);
+        }
+    }
+    static void balance(int amount) throws Exception{
+
+        if (amount >100){
+            throw new InsufficientFundsException("Sorry, requsted amount exceeding your account balance. Try to withdraw upto 100(current account balance)." );
+        }
+        else{
+            System.out.println("Transaction successful.");
+        }
+    }
+
+    // 20.	Create a custom exception to handle invalid email addresses.
+    static class InvalidEmailException extends Exception{
+        InvalidEmailException(String msg){
+            super(msg);
+        }
+    }
+
+    static void emailVerifiaction(String email) throws Exception{
+        if (email.length()<13) {
+            throw new InvalidEmailException("Try to enter valid email.");
+        }
+
+        String checkFormat = email.substring(email.length()-10);
+        String validFormat = "@email.com";
     
+        if(checkFormat.equals(validFormat)){
+            System.out.println("Valid Email.");
+        }
+        else{
+            throw new InvalidEmailException("Try to enter valid email.");
+        }
+    }
+
+    // 21.	Create a custom exception to handle negative numbers in a mathematical operation.
+    static class NegativeNumberException extends Exception{
+        NegativeNumberException(String msg){
+            super(msg);
+        }
+    }
+
+    static void handleNumber(int num) throws Exception{
+        if(num<0){
+            throw new NegativeNumberException("Negative number detected");
+        }
+        
+    }
 }

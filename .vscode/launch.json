@@ -8,6 +8,13 @@
             "type": "java",
             "name": "Main",
             "request": "launch",
+            "mainClass": "OOP.Main",
+            "projectName": "JAVA practice_e7a616ae"
+        },
+        {
+            "type": "java",
+            "name": "Main",
+            "request": "launch",
             "mainClass": "BookApp/com.example.Main",
             "projectName": "JAVA practice_e7a616ae"
         },

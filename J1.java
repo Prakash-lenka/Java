@@ -124,8 +124,12 @@ public class J1 {
       // n-=1;
       // System.out.print(n+" "+k);
 
-      System.out.println(String.valueOf(123).length());
-      System.out.println(Math.pow(10,3));
+      // System.out.println(String.valueOf(123).length());
+      // System.out.println(Math.pow(10,3));
+
+      String s = "prakash";
+      System.out.println(s.substring(s.length()-2));
+
 
 
       
