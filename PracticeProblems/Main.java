@@ -212,7 +212,7 @@ public class Main {
         sc.close(); 
         */
 
-        //21).
+        /* //21).
         Scanner sc = new Scanner(System.in);
         int num;
         int sum = 0;
@@ -228,7 +228,8 @@ public class Main {
             sum+=num;
         }
         System.out.println("Sum of the numbers you entered: "+sum);
-        sc.close();
+        sc.close(); 
+        */
         
        
    }// ***main method ends.***
