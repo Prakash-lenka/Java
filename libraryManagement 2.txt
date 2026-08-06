@@ -1,0 +1,85 @@
+Develop library management system. This system has the following main use cases: 
+1. generate default, parameterised constructors, getters & Setters, toString methods for all classes
+2. Allow users to interact with application thourgh console (using Scanner class & Switch) and store objects using 
+    Collections
+
+// base pkg
+com.example - base pkg
+  Main.java 
+    psvm(){
+       Scanner sc = new Scanner();
+       
+    }
+
+  //sub pkgs
+  com.example.entity
+    
+  com.example.service
+    - addBook
+  com.example.repository
+
+
+// Package Structure
+packages -
+ com.example
+   Main.java
+    // use scanner & switch
+    // Select any one option from below
+    /* do() {}while()
+	1. Book
+           1. Add Book
+              - Collect - id, title, description, price, author, publisher & quantity.
+              - Call service addBook() to addbook() in repository
+              - 
+           2. Update Book Details
+	   3. Delete Book By Id
+	   4. Delete Book By Name
+	   5. Search Book By Id
+	   6. Seach Book By Title
+              - get 'Title' from end user
+		
+     2. User
+	   1. Add User
+           2. Update User Details
+	   3. Delete User By Id
+	   4. Delete User By Name
+	   5. Search User By Name
+
+	3. LoanRecord
+
+
+     99. exit
+
+    */
+  com.example.entity
+        // generate default, parameterised constructors, getters & Setters, toString methods for all classes
+   	Book(C) - private variables, constructors, getters & setters and toString()
+	  id, title, description, price, author, publisher & quantity.
+	User(C)
+	   id, username, fullName, contactNo,  email, password, role, dob
+	LoanRecord(C)
+           borrow date, due date, return date
+  com.example.service
+        BookService(I) - abstract methods - add, delete, list, update books
+        BookServiceImpl(C) - logic - add, delete, list, update books
+	UserService(I)
+	UserServiceImpl(C)
+	LoanRecordService(I)
+	LoanRecordServiceImpl(C)
+   com.example.repository - Use collection to store object
+	BookRepository(I) - add, delete, list, update books
+        BookRepositoryImpl(C) -add, delete, list, update books
+	UserRepository(I)
+	UserRepositoryImpl(C)
+	LoanRecordRepository(I)
+	LoanRecordRepositoryImpl(C)
+
+// Methods
+  - add, delete, list, update books info to/from library.
+  - add, delete,update & list users
+  - method to order new books.
+  - methods to update title, price, quantity of books
+  - Create Loan Records
+  - method to view loan records
+
+						******
