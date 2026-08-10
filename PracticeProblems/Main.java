@@ -1,9 +1,8 @@
 package PracticeProblems;
-import java.util.Scanner;
-
 import javax.naming.InsufficientResourcesException;
 
-import java.util.Arrays;
+import java.util.*;
+
 // import PracticeProblems.OOPsPrograms.Shape;
 // import PracticeProblems.OOPsPrograms.Triangle;
 // import PracticeProblems.OOPsPrograms.Circle;
@@ -22,6 +21,8 @@ public class Main {
     public static void main(String[] args) {
 
         // ***** FOR QUESTIONS(1-13) METHODS WHICH ARE CALLING HERE ARE DECLARED BELOW(OUTSIDE MAIN METHOD).*****
+
+        Scanner sc = new Scanner(System.in);
 
         /* //1).
         System.out.print("Fibonacci sequence with recursion: ");
@@ -42,67 +43,67 @@ public class Main {
         */
 
         /* //4).
-        Scanner sc = new Scanner(System.in);
+        
         int fin = sc.nextInt();
         System.out.println("factorial of "+fin+" with recursion: "+factrecur(fin));
         System.out.println("factorial of "+fin+" without recursion: "+factnonrecur(fin));
-        sc.close(); 
+        
         */
 
         /* //5).
-        Scanner sc = new Scanner(System.in);
+        
         String in = sc.nextLine();
         System.out.println("reverse of "+in+": "+strrev(in));
-        sc.close(); 
+        
         */
     
         /* //6).
-        Scanner sc = new Scanner(System.in);
+        
         String in = sc.nextLine();
         VowelsAndConsonents(in);
-        sc.close(); 
+        
         */
 
         /* //7).
-        Scanner sc = new Scanner(System.in);
+        
         int num = sc.nextInt();
         System.out.println("is "+num+" prime? : "+isPrime(num));
-        sc.close(); 
+        
         */
        
         /* //8).
-        Scanner sc = new Scanner(System.in);
+    
         int num = sc.nextInt();
         System.out.println(isArmstrongNum(num));
-        sc.close();
+        
         */
 
         /* //9).
-        Scanner sc = new Scanner(System.in);
+        
         int num = sc.nextInt();
         System.out.println("The sum of Digits of the number "+num+" is "+sumOfDigits(num));
-        sc.close(); 
+        
         */
 
         /* //10).
-        Scanner sc = new Scanner(System.in);
+        
         int[] nums = new int[3];
         for(int i = 0;i<3;i++){
             nums[i] = sc.nextInt();
         }
         System.out.println("The maximum number is: "+maxNumber(nums));
-        sc.close(); 
+        
         */
 
         /* //11).
-        Scanner sc = new Scanner(System.in);
+        
         int num = sc.nextInt();
         evenOrOdd(num);
-        sc.close(); 
+        
         */
 
         /* //12).
-        Scanner sc = new Scanner(System.in);
+        
         System.out.print("how many numbers you want to sort? : ");
         int totalnums = sc.nextInt();
         int nums[] = new int[totalnums];
@@ -111,7 +112,7 @@ public class Main {
             nums[i] = sc.nextInt();
         }
         bubbleSort(nums);
-        sc.close(); 
+        
         */
 
         /* //13).
@@ -120,7 +121,7 @@ public class Main {
         */
         
         /* //14).
-        Scanner sc = new Scanner(System.in);
+        
         // Area of a Circle
         // System.out.print("raidus: ")
         // double radius = sc.nextDouble();
@@ -143,7 +144,7 @@ public class Main {
         // Shape triangle = new Triangle(height, base);
         // System.out.println("Area of a rectangle of 'height' "+height+" and 'base' "+base+" is "+triangle.calculateArea());
         
-        sc.close(); 
+    
         */
 
         /* //15).
@@ -175,7 +176,7 @@ public class Main {
         */
 
         /* //18).
-        Scanner sc = new Scanner(System.in);
+        
         int age = sc.nextInt();
 
         try{
@@ -184,11 +185,11 @@ public class Main {
         catch(Exception e){
             System.out.println("Registration failed: "+ e.getMessage());
         }
-        sc.close(); 
+        
         */
 
         /* //19).
-        Scanner sc = new Scanner(System.in);
+        
         int amount = sc.nextInt();
 
         try{
@@ -197,11 +198,11 @@ public class Main {
         catch(Exception e){
             System.out.println("Transaction failed: "+ e.getMessage());
         }
-        sc.close();  
+        
         */
         
         /* //20).
-        Scanner sc = new Scanner(System.in);
+        
         String email = sc.next();
         try{
             emailVerifiaction(email);
@@ -209,11 +210,11 @@ public class Main {
         catch(Exception e){
             System.out.println("Invalid Email: "+ e.getMessage());
         }
-        sc.close(); 
+        
         */
 
         /* //21).
-        Scanner sc = new Scanner(System.in);
+        
         int num;
         int sum = 0;
         for(int i = 0;i<5;i++){
@@ -228,9 +229,68 @@ public class Main {
             sum+=num;
         }
         System.out.println("Sum of the numbers you entered: "+sum);
-        sc.close(); 
         */
-        
+
+        /* //22).
+        String[] input = sc.nextLine().split(" ");
+        ArrayList<Integer> arr = new ArrayList<>();
+        for(int i = 0;i<input.length;i++){
+            arr.add(Integer.parseInt(input[i]));
+        }
+        removeDuplicates(arr);
+        System.out.println('a'<'b'); 
+        */
+
+        /* //23).
+        String[] input = sc.nextLine().split(" ");
+        List<Object> arr = new ArrayList<>();
+        for(Object i:input){
+            arr.add(i);
+        }
+        frequencyArr(arr);
+        */
+
+        /* //24).
+        String[] input = sc.nextLine().split(" ");
+        List<Object> arr = new ArrayList<>();
+        for (String i:input){
+            // arr.add(Integer.parseInt(i));
+            arr.add(i);
+        }
+        findDuplicate(arr); 
+        */
+
+        /* //25).
+        String[] input = sc.nextLine().split(" ");
+        List<Object> arr = new ArrayList<>();
+        for(Object i:input){
+            arr.add(i);
+        }
+        sortingStrings(arr); 
+        */
+
+        /* //26).
+        String[] input1 = sc.nextLine().split(" ");
+        String[] input2 = sc.nextLine().split(" ");
+        HashSet<Object> set1 = new HashSet<>();
+        HashSet<Object> set2 = new HashSet<>();
+        for(Object i:input1){
+            set1.add(i);
+        }
+        for(Object i:input2){
+            set2.add(i);
+        }
+        unionOfTwoHashsets(set1, set2);
+        */
+
+        /* //28).
+        basicOpPriorityQueue(); 
+        */
+
+        //29).
+        basicOpDeque();
+
+        sc.close(); 
        
    }// ***main method ends.***
 
@@ -513,4 +573,92 @@ public class Main {
         }
         
     }
+
+    // 22.	Write a program to remove duplicate elements from an ArrayList.
+    static void removeDuplicates(List duplicateArr){
+        LinkedHashSet<Integer> set = new LinkedHashSet<>(duplicateArr);
+        System.out.println(set);
+    }
+
+    // 23.	Write a program to count the frequency of each element in an ArrayList.
+    static void frequencyArr(List arr){
+        HashMap<Object,Integer> map = new HashMap<>();
+        for(Object i:arr){
+            if (map.containsKey(i)){
+                map.put(i,map.get(i)+1);
+            }
+            else{
+                map.put(i,1);
+            }
+        }
+        System.out.println(map);
+
+    }
+
+    // 24.	Write a program to find duplicate elements in an ArrayList.
+    static void findDuplicate(List arr){
+        HashSet<Object> set = new HashSet<>();
+        List<Object> list = new ArrayList<>();
+        for (Object i:arr){
+            if (list.contains(i)){
+                set.add(i);
+            }
+            else{
+                list.add(i);
+            }
+        }
+        if (set.isEmpty()){
+            System.out.println("No Duplicates.");
+        }
+        else{
+            System.out.println("Duplicates: "+set);
+        }
+    }
+
+    // 25.	Write a program to sort an ArrayList of strings in ascending and descending order.
+    static void sortingStrings(List strings){
+        Collections.sort(strings);
+        System.out.println("Sorted in Ascending: "+strings);
+        Collections.sort(strings,Collections.reverseOrder());
+        System.out.println("Sorted in Descending: "+strings);
+    }
+
+    // 26.	Write a program to find the union of two HashSets.
+    static void unionOfTwoHashsets(HashSet<Object> set1, HashSet<Object> set2){
+        set1.addAll(set2);
+        System.out.println(set1);
+    }
+
+    // 27.	Write a program to perform basic operations (add, remove, peek) on a PriorityQueue.
+    static void basicOpPriorityQueue(){
+
+        Comparator<Integer> c = (a,b)->a-b;
+        PriorityQueue<Integer> pq = new PriorityQueue<>(c);
+
+        pq.add(3);
+        pq.add(2);
+        pq.add(1);
+        System.out.println(pq);
+        System.out.println(pq.peek());
+        pq.remove(1);
+        System.out.println(pq);
+
+    }
+
+    // 28.	Write a program to perform basic operations (addFirst, addLast, removeFirst, removeLast) on a Deque.
+    static void basicOpDeque(){
+        Deque<Integer> dq = new ArrayDeque<>();
+        dq.addFirst(1);
+        dq.add(3);
+        dq.add(8);
+        dq.add(5);
+        dq.addFirst(7);
+        System.out.println(dq);
+        dq.removeFirst();
+        System.out.println(dq);
+        dq.removeLast();
+        System.out.println(dq);
+    }
+
+
 }
