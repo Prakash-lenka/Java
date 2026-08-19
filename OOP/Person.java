@@ -4,6 +4,8 @@ public class Person {
     int age;
     String email;
     String job;
+
+    Person(){}
     
     Person(String name, int age, String email, String job) {
         this.name = name;
@@ -38,6 +40,14 @@ public class Person {
     public static void show(){
         System.out.println("Hello, I am a static method in the Person class.");
         
+    }
+
+    public void a(){}
+    static class P{
+
+        void methodd(){
+            System.out.println("Hi I'm P class in person");
+        }
     }
 }
 

@@ -6,6 +6,27 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CollectionDemo",
+            "request": "launch",
+            "mainClass": "CollectionDemo",
+            "projectName": "JAVA practice_e7a616ae"
+        },
+        {
+            "type": "java",
+            "name": "ThreadDemo",
+            "request": "launch",
+            "mainClass": "OOP.ThreadDemo",
+            "projectName": "JAVA practice_e7a616ae"
+        },
+        {
+            "type": "java",
+            "name": "functionalInterface",
+            "request": "launch",
+            "mainClass": "OOP.functionalInterface",
+            "projectName": "JAVA practice_e7a616ae"
+        },
+        {
+            "type": "java",
             "name": "Main",
             "request": "launch",
             "mainClass": "OOP.Main",

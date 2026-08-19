@@ -19,10 +19,22 @@ public class Main {
         
         // System.out.println(me);
 
-        Prakash man = new Prakash();
-        man.height();
-        man.weight();
+        // Prakash man = new Prakash();
+        // man.height();
+        // man.weight();
 
+        Person obj = new Person();
+        Person.P objp = new Person.P();
+        objp.methodd();
+
+        class A extends Person{
+            public void a(){
+                System.out.println("Hi I'm a");
+            }
+        }
+
+        Person obj1 = new A();
+        obj1.a();
 
 
     }
@@ -30,7 +42,7 @@ public class Main {
 
 class Me{
     void dis(){
-        System.out.println("Hello, I am a class in the OOP package.");
+        System.out.println("Hello, I am a class in th0e OOP package.");
     }
     @Override
     public String toString() {

@@ -1,5 +1,8 @@
 // ...existing code...
 import java.util.Arrays;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Queue;
 import java.util.ArrayList;
 import OOP.Person;
 import static OOP.Person.show;
@@ -127,8 +130,15 @@ public class J1 {
       // System.out.println(String.valueOf(123).length());
       // System.out.println(Math.pow(10,3));
 
-      String s = "prakash";
-      System.out.println(s.substring(s.length()-2));
+      // String s = "prakash";
+      // System.out.println(s.substring(s.length()-2));
+
+      int[] a = new int[1];
+
+      a[0]= 1;
+      
+
+      
 
 
 
