@@ -5,7 +5,7 @@ import java.util.stream.Stream;
 public class CollectionDemo {
     
     public static void main(String[] args) {
-        
+        System.out.println("Collection Demo");
         // List<Integer> arr = new ArrayList<>();
         // List<Integer> nums = Arrays.asList(1,2,3,6,3,2);
         // arr.add(3);arr.add(2);arr.add(35);arr.add(12);arr.add(9);
