@@ -136,14 +136,14 @@ public class J1 {
       int[] a = new int[1];
 
       a[0]= 1;
-      
+   }
 
-      
-
-
-
-      
-
-
+   static void reverseArrayInPlace(int[] array) {
+      for (int left = 0, right = array.length - 1; left < right; left++, right--) {
+         int temp = array[left];
+         array[left] = array[right];
+         array[right] = temp;
+      }
    }
 }
+
